@@ -1,7 +1,8 @@
 :root {
-    --color-main: #141414;
+    --color-main: var(--color-theme-main);
     --color-second: #747474;
-    --color-bac: #FFFFFF;
+    --color-bac: var(--color-theme-bac);
+    --color-white: #FFFFFF;
 }
 
 * {
@@ -14,7 +15,6 @@
 }
 
 body {
-    width: 100wv;
     background-color: var(--color-bac);
 }
 
@@ -52,7 +52,7 @@ header #name {
 header #theme {
     width: 40px;
     height: 40px;
-    background-image: url(IMG/darkTheme.svg);
+    cursor: pointer;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@ header #theme {
     font-weight: 200;
     border-radius: 5px;
     cursor: pointer;
-    color: var(--color-bac);
+    color: var(--color-white);
     background-color: var(--color-second);
 }
 
@@ -126,7 +126,7 @@ header #theme {
 #items .item .tegs .teg {
     text-align: center;
     padding: 10px;
-    color: var(--color-bac);
+    color: var(--color-white);
     font-weight: 100;
     font-size: 0.9rem;
     border-radius: 0 0 5px 5px;
