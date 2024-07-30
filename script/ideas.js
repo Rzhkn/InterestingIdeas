@@ -2,7 +2,12 @@ funIdeas();
 
 function funNuv(a) {
     const nuv = document.getElementsByClassName("nav_but");
-    nuv[a].classList.toggle("false");
+    if(nuv[a].classList.contains("false")){
+        nuv[a].classList.remove("false");
+    }
+    else {
+        nuv[a].classList.add("false");
+    }
     
     funIdeas();
 }
@@ -14,9 +19,9 @@ function funIdeas() {
     const nuvCSS = Array.from(nuv_true).some(div => div.textContent.trim() === "CSS");
     const nuvJS = Array.from(nuv_true).some(div => div.textContent.trim() === "JS");
     
-    console.log(nuvHTML);
-    console.log(nuvCSS);
-    console.log(nuvJS);
+//    console.log(nuvHTML);
+//    console.log(nuvCSS);
+//    console.log(nuvJS);
 
     let db = ideas;
     if (nuvHTML) {
