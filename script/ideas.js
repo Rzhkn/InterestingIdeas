@@ -41,32 +41,29 @@ function funIdeas() {
     items.innerHTML = "";
     for (let i = 0; i < db.length; i++) {
         items.innerHTML += `<div class="item">
-                <div class="tegs">
-                    <div class="teg"></div>
-                    <div class="teg"></div>
-                    <div class="teg"></div>
+                <div class="tegs"></div>
+                <div class="text_wrap">
+                    <div class="text">
+                        <p class="text_title">${db[i].title}</p>
+                        <p class="text_text">${db[i].text}</p>
+                    </div>
+                    <div class="arrow"></div>
                 </div>
-                <div class="text">${db[i].text}</div>
+                
             </div>`
 
-        let ideas_teg = document.getElementsByClassName("teg");
+        let ideas_teg = document.getElementsByClassName("tegs");
 
         if (db[i].html) {
-            ideas_teg[i * 3].textContent = "HTML";
-        } else {
-            ideas_teg[i * 3].style.backgroundColor = 'inherit';
+            ideas_teg[i].innerHTML += `<div class="teg">HTML</div>`
         }
 
         if (db[i].css) {
-            ideas_teg[i * 3 + 1].textContent = "CSS";
-        } else {
-            ideas_teg[i * 3 + 1].style.backgroundColor = 'inherit';
+            ideas_teg[i].innerHTML += `<div class="teg">CSS</div>`
         }
 
         if (db[i].js) {
-            ideas_teg[i * 3 + 2].textContent = "JS";
-        } else {
-            ideas_teg[i * 3 + 2].style.backgroundColor = 'inherit';
+            ideas_teg[i].innerHTML += `<div class="teg">JS</div>`
         }
     }
 }
