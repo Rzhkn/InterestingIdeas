@@ -47,7 +47,7 @@ function funIdeas() {
                         <p class="text_title">${db[i].title}</p>
                         <p class="text_text">${db[i].text}</p>
                     </div>
-                    <div class="arrow"></div>
+                    <a href="${db[i].link}" aria-label=""><div class="arrow"></div></a>
                 </div>
                 
             </div>`

@@ -1,0 +1,118 @@
+:root {
+    --color-main: var(--color-theme-main);
+    --color-second: #747474;
+    --color-bac: var(--color-theme-bac);
+    --color-bac-items: var(--color-theme-bac-items);
+    --color-orange: #EB5E28;
+    --color-white: #FFFFFF;
+}
+
+* {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--color-main);
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-bac);
+}
+
+::-webkit-scrollbar { display: none; }
+
+#title p {
+    padding: 50px 0 40px 20px;
+    font-size: calc(32px + 192 * (100vw / 1920));
+    font-weight: 900;
+}
+
+.example_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--color-bac-items);
+}
+
+.example_wrap .conclusions {
+    width: 40%;
+    padding: 10px;
+}
+
+.example_wrap .text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-orange);
+    margin-bottom: 15px;
+}
+
+.example_wrap .sub-text {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.conclusions .code {
+    margin-bottom: 5px;
+}
+
+.conclusions .code pre {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.conclusions .code:last-child {
+    margin-bottom: 0;
+}
+
+.code pre code {
+    padding: 5px;
+}
+
+.example_wrap .example {
+    display: flex;
+    width: 55%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--color-orange);
+}
+
+.hljs {
+    border-radius: 3px;
+    background-color: var(--color-bac);
+}
+
+.image-swiper {
+    margin: auto 0;
+}
+
+.image-swiper .swiper-slide{
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 950px) {
+    .example_wrap {
+        display: block;
+    }
+    
+    .example_wrap .conclusions {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .example_wrap .example {
+        width: calc(100% - 20px);
+        margin-top: 20px;
+    }
+}

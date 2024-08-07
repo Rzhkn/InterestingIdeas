@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Тренировка использования библиотеки Swiper.js">
+    <title>Swiper</title>
+
+    <!--Подключение библиотеки Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--Подключение шрифта-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <!--Подключение библиотеки для подсветки кода-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark-reasonable.min.css">
+
+    <!--Подключение стилей-->
+    <link rel="stylesheet" href="../../style/dark.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="title">
+        <p>Swiper</p>
+    </div>
+
+    
+
+        <div class="example_wrap">
+
+            <div class="conclusions">
+                
+                <p class="text">Основные функции</p>
+                
+                <p class="sub-text">Подключение Swiper</p>
+
+                <div class="code">
+                    <pre><code class="language-html">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /&gt;</code></pre>
+                </div>
+
+                <div class="code">
+                    <pre><code class="language-html">&lt;script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer&gt; &lt;/script&gt;</code></pre>
+                </div>
+
+            </div>
+
+            <div class="example">
+                <div class="image-swiper swiper-container ">
+                    <div class="swiper-wrapper wrapper">
+
+                        <div class="swiper-slide slide">
+                            <div class="img-slider">
+                                <img src="IMG/1.jpg" alt="котики">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <div class="img-slider">
+                                <img src="IMG/2.jpg" alt="котики">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <div class="img-slider">
+                                <img src="IMG/3.jpg" alt="котики">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <div class="img-slider">
+                                <img src="IMG/4.jpg" alt="котики">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <div class="img-slider">
+                                <img src="IMG/5.jpg" alt="котики">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    
+
+    <!--Подключение библиотеки Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!--Подключение js кода-->
+    <script type="text/javascript" src="script.js" defer></script>
+
+    <!--Подключение библиотеки для подсветки кода-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            hljs.highlightAll();
+        });
+    </script>
+
+</body></html>
